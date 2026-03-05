@@ -105,3 +105,22 @@ grep "Accepted password" /var/log/auth.log
 - `/var/log/auth.log` records authentication activity on the system
 
 This command allows analysts to verify successful login events and correlate them with other security activity.
+
+### 4. Investigate Sudo Privilege Escalation
+
+Privilege escalation events occur when a user executes commands with elevated privileges using `sudo`.  
+Monitoring these events helps security analysts detect unauthorized administrative activity.
+
+**Command:**
+
+```bash
+grep "sudo" /var/log/auth.log
+```
+
+**Explanation**
+
+- `grep` searches text inside log files
+- `"sudo"` identifies commands executed with elevated privileges
+- `/var/log/auth.log` records privilege escalation events
+
+This command helps analysts review administrative actions performed on the system.
