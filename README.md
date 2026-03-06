@@ -35,7 +35,7 @@ This lab demonstrates how SOC analysts use Linux log data to monitor systems and
 
 ## Environment Overview
 
-**Operating System:** Ubuntu Linux (Virtual Machine)
+**Operating System:** Operating System: Ubuntu Linux 24.04 (VMware Workstation Virtual Machine)
 
 **Logs Analyzed**
 - `/var/log/auth.log`
@@ -124,6 +124,8 @@ grep "sudo" /var/log/auth.log
 - `/var/log/auth.log` records privilege escalation events
 
 This command helps analysts review administrative actions performed on the system.
+
+---
 
 ## Log Analysis
 
