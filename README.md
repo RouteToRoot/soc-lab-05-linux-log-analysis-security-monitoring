@@ -148,3 +148,22 @@ Successful login events should also be monitored for anomalies such as logins oc
 Sudo activity is another important indicator because attackers who compromise a user account frequently attempt privilege escalation to gain administrative control of a system.
 
 By monitoring authentication logs and privilege escalation events, SOC analysts can detect unauthorized access attempts, investigate suspicious activity, and respond to potential security incidents.
+
+## Evidence
+
+All screenshots are stored in the `/screenshots` directory:
+
+- `auth-log-view.png` — Viewing authentication logs
+- `failed-ssh-logins.png` — Failed SSH login attempts detected
+- `successful-ssh-login.png` — Successful SSH authentication event
+- `sudo-activity.png` — Privilege escalation activity using sudo
+
+These screenshots provide evidence of the authentication log investigation performed during this lab.
+
+## Conclusions
+
+This lab demonstrated how Linux authentication logs can be analyzed to identify security-relevant events such as failed login attempts, successful authentication, and privilege escalation activity.
+
+By examining `/var/log/auth.log`, we were able to detect failed SSH login attempts, confirm successful user authentication, and observe administrative actions performed using `sudo`. These types of events are commonly reviewed by Security Operations Center (SOC) analysts when investigating suspicious activity or responding to security alerts.
+
+Understanding how to quickly search and interpret authentication logs is an essential skill for security analysts, as it allows them to detect unauthorized access attempts, investigate user activity, and identify potential privilege escalation behavior on Linux systems.
