@@ -167,3 +167,14 @@ This lab demonstrated how Linux authentication logs can be analyzed to identify 
 By examining `/var/log/auth.log`, we were able to detect failed SSH login attempts, confirm successful user authentication, and observe administrative actions performed using `sudo`. These types of events are commonly reviewed by Security Operations Center (SOC) analysts when investigating suspicious activity or responding to security alerts.
 
 Understanding how to quickly search and interpret authentication logs is an essential skill for security analysts, as it allows them to detect unauthorized access attempts, investigate user activity, and identify potential privilege escalation behavior on Linux systems.
+
+## Next Steps
+
+To continue developing SOC investigation and detection skills:
+
+- **SOC Lab 06 — Detecting Port Scanning Activity**
+- Generate network scanning activity using tools such as Nmap
+- Capture and analyze scanning traffic using Wireshark
+- Identify reconnaissance patterns commonly used by attackers
+
+This progression expands from host-based monitoring into network-based threat detection.
