@@ -124,3 +124,27 @@ grep "sudo" /var/log/auth.log
 - `/var/log/auth.log` records privilege escalation events
 
 This command helps analysts review administrative actions performed on the system.
+
+## Log Analysis
+
+The investigation of `/var/log/auth.log` revealed several important authentication events.
+
+Multiple failed SSH login attempts were detected for the user `fakeuser`. These attempts originated from `127.0.0.1`, which indicates the login attempts were generated locally during the lab simulation. In a real-world environment, repeated failed login attempts from external IP addresses may indicate brute-force or credential guessing attacks.
+
+A successful SSH login event was also recorded for the legitimate user `eric`. This confirms that valid authentication events are logged using the phrase **"Accepted password"**, which security analysts can search for to confirm successful authentication.
+
+Additionally, sudo activity was detected showing the user `eric` executing commands with elevated privileges. Monitoring sudo usage is important because attackers who gain initial access to a system often attempt privilege escalation to obtain administrative control.
+
+These authentication logs demonstrate how SOC analysts can identify failed login attempts, legitimate access, and administrative activity during security investigations.
+
+## Detection Engineering Insights
+
+Authentication logs provide valuable visibility into user activity and system access patterns. Security analysts frequently use log queries like `grep` to quickly identify suspicious authentication behavior.
+
+Repeated failed login attempts can indicate brute-force attacks, password spraying, or automated scanning tools attempting to gain unauthorized access. Monitoring for patterns such as multiple failed logins from the same IP address or attempts against multiple user accounts can help identify these attacks early.
+
+Successful login events should also be monitored for anomalies such as logins occurring at unusual times or from unfamiliar IP addresses. Analysts often correlate successful login events with failed login attempts to determine whether attackers eventually gained access.
+
+Sudo activity is another important indicator because attackers who compromise a user account frequently attempt privilege escalation to gain administrative control of a system.
+
+By monitoring authentication logs and privilege escalation events, SOC analysts can detect unauthorized access attempts, investigate suspicious activity, and respond to potential security incidents.
