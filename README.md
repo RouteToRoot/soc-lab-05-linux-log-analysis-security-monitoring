@@ -156,8 +156,8 @@ By monitoring authentication logs and privilege escalation events, SOC analysts 
 All screenshots are stored in the `/screenshots` directory:
 
 - `auth-log-view.png` — Viewing authentication logs
-- `failed-ssh-logins.png` — Failed SSH login attempts detected
-- `successful-ssh-login.png` — Successful SSH authentication event
+- `failed-ssh-logins-clean.png` — Failed SSH login attempts detected
+- `successful-ssh-login-clean.png` — Successful SSH authentication event
 - `sudo-activity.png` — Privilege escalation activity using sudo
 
 These screenshots provide evidence of the authentication log investigation performed during this lab.
