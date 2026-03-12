@@ -162,10 +162,13 @@ All screenshots are stored in the `/screenshots` directory:
 
 These screenshots provide evidence of the authentication log investigation performed during this lab.
 
-<img width="3242" height="2044" alt="auth-log-view" src="https://github.com/user-attachments/assets/...">
-<img width="3325" height="2121" alt="failed-ssh-logins" src="https://github.com/user-attachments/assets/...">
-<img width="3325" height="2121" alt="successful-ssh-login" src="https://github.com/user-attachments/assets/...">
-<img width="3242" height="2044" alt="sudo-activity" src="https://github.com/user-attachments/assets/...">
+![Authentication Logs](screenshots/auth-log-view.png)
+
+![Failed SSH Login Attempts](screenshots/failed-ssh-logins-clean.png)
+
+![Successful SSH Login](screenshots/successful-ssh-login-clean.png)
+
+![Sudo Activity](screenshots/sudo-activity.png)
 
 ## Conclusions
 
