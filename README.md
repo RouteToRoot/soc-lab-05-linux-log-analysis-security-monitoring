@@ -168,7 +168,7 @@ These screenshots provide evidence of the authentication log investigation perfo
 
 ![Successful SSH Login](screenshots/successful-ssh-login-clean.png)
 
-![Sudo Activity](screenshots/sudo-activity.png)
+![Sudo Activity](screenshots/sudo-activity-clean.png)
 
 ## Conclusions
 
